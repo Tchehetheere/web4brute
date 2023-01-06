@@ -118,6 +118,10 @@ $error = true;
 
 <div class="container" style="border: 1px ridge #ba0202; padding: 20px">
     <form action="" method="post">
+        
+    <?php if(isset($error)) : ?>
+        <p style="text-align: center">Login failed</p>
+    <?php endif; ?>
 
     <!-- username column -->
 
@@ -138,9 +142,6 @@ $error = true;
         </div>
     </form>
 
-    <?php if(isset($error)) : ?>
-        <p style="color: red; font-style: italic">Login failed</p>
-    <?php endif; ?>
 </div>
 
 </body>
